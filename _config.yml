@@ -1,9 +1,9 @@
-title: Conference 2020
+title: PARTYCom 2025
 preposition: ''
 description: >-
-  Conference of a random organization on January 1st in Zurich, Switzerland
+   Prestigious Assembly for Research in Tasting & Yelling
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://example.com" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://therustystorm.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 
 # Build settings
 markdown: kramdown
@@ -53,20 +53,114 @@ defaults:
 
 # Theme default values
 conference:
+
+  # Language
   lang: en
+
+  # Timezone
+  tz: "+02:00"
+
+  # Show theme errors:
   show_errors: True
 
+  # Navigation bar
+  navigation:
+    logo:
+      name: 
+      # img: ''
+      url: 'https://therustystorm.github.io'
+    breakpoint: md
+    links:
+      - name: Program
+        relative_url: /program/
+      - name: Talks
+        relative_url: /talks/
+      - name: Speakers
+        relative_url: /speakers/
+      - name: Location
+        relative_url: /location/
+      
+  # Link Preview for Sharing
   link_preview:
+    # also adapt "preposition" property at top for more meaningful descriptions
     disable: false
+    img:
+      twitter: 'twitter_preview.png'      # inside /assets/images/
+      open_graph: 'facebook_preview.png'  # inside /assets/images/
+
+  # Main landing page
+  main:
+    # logo:
+    #   img: ''
+    links:
+      - name: Program
+        relative_url: /program/
+      - name: How to get there
+        relative_url: /location/
+
+  # Information boxes
+  info_bars:
+    - title: Call for Party
+      color: primary
+      main_only: true
+      text: |
+        Yes i'm doing a conference themed birthday party.
+  # Live indications
+  live:
+    date: 01.01.2020
+    timezone: GMT+1
+    stop:       240  # in minutes
+    streaming:
+      enable: true
+      pause:     60  # in minutes
+      prepend:    5  # in minutes
+      extend:     5  # in minutes
+    demo:
+      enable: false
+      duration: 300  # in seconds
+      pause:     10  # in seconds
+
+  talks:
+    # Talk categories
+    main_categories:
+      - name: Cat A
+        color: info
+      - name: Cat B
+        color: success
+
+    # Hide icons on talk overview page
+    hide_icons: false
 
   speakers:
+    # Show first and last name
     show_firstname: true
 
   location:
+    # Disable links to locations
+    hide: false
+    # URL of location / room overview page
     url: '/location'
-    map: true
+    # Main page title shown on location/room navigation bar
+    navbar_title: 'Location'
+    # Show map on location main page.  Set `map: false` if you don't want to
+    # display it.
+    map:
+      # Initial map center point
+      home_coord: 51.424684035296686, 6.805393639522903
+      # Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
+      # The following do match the Bootstrap design not too badly:
+      #   - Thunderforest.Neighbourhood
+      #   - Esri.WorldTopoMap
+      map_provider: "OpenStreetMap.Mapnik"
+      default_zoom: 15
+
 
   program:
+    # URL of program page
     url: '/program'
-    time_steps: 15
+
+    # Time steps in program table
+    time_steps: 15 # in minutes
+
+    # Show intermediary time steps (next to full hours)
     show_alltimes: true

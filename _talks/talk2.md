@@ -1,10 +1,8 @@
 ---
-name: Condimentum Vitae Sapien Pellentesque
+name: Main Program
 speakers:
-  - Tolga Philip
-  - Alex Rosales
+  - Peter Zdankin
 categories:
   - Cat A
   - Talk
-hide: true
 ---

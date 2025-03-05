@@ -1,5 +1,7 @@
 ---
-name: Room A
+name: Duisburg Forest
+layout: location
 ---
+# Duisburg Stadtwald
 
-A short way description on how to find the room
+Forsthausweg, there is a hill to climb to reach the boars. Enter to the small forest-path to the right, or just give me a call and i'll send you a Live-Location
