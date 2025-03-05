@@ -1,6 +1,8 @@
 ---
 layout: home
 ---
+# PARTYCom 2025
+
 ## Dear Esteemed Researchers, Beverage Enthusiasts, and Party Scholars,
 
 We are pleased (and slightly buzzed) to invite submissions for the First PARTYCom Conference ( **April 12, 2025**) – a groundbreaking full day symposium dedicated to the scientific exploration of drinking, questionable PowerPoint slides, and unforgettable birthday celebrations.
