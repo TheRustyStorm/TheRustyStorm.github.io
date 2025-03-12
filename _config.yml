@@ -10,6 +10,9 @@ markdown: kramdown
 sass:
   style: compressed
 
+include:
+  - robots.txt
+
 # Exclude from processing
 exclude:
   - .github/
